@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluguéis de Bichos de Pelúcia Motorizados</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h2>Aluguéis por Dia da Semana</h2>
+    <label for="clima">Filtrar por Clima:</label>
+    <select id="clima" onchange="updateChart()">
+        <option value="todos">Todos</option>
+        <option value="ensolarado">Ensolarado</option>
+        <option value="chuvoso">Chuvoso</option>
+        <option value="nublado">Nublado</option>
+    </select>
+
+    <canvas id="alugueisChart"></canvas>
+
+    <script src="bichos.js"></script>
+</body>
+</html>
